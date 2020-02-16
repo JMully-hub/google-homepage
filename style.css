@@ -64,3 +64,21 @@ a:visited{
 #squares:hover{
     opacity: 100%;
     }
+
+img{
+    display: block;
+    margin-left: 43%;
+    width: auto;
+    padding-top: 182px;  
+}
+
+
+input{
+    display: block;
+    margin-left: 43%;
+    width: 500px;
+    height: 40px;
+    font-size: large;    
+
+  
+}

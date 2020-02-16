@@ -50,5 +50,17 @@ a:visited{
 }
     
 #squares{
-    background-origin: ;
-}
+    width: 14px;
+    height: 14px;
+    padding: 2px;
+    margin-left: 12px;
+    margin-right: 20px;
+    margin-top: 7px; 
+    background-image: url("./media/squares.svg");
+    background-size: contain;
+    opacity: 70%;
+    }
+
+#squares:hover{
+    opacity: 100%;
+    }

@@ -1,11 +1,29 @@
 
 body, html{
-font-size: small;
 height: 100%;
 margin: 0;
 display: block;
 font-family: ariel, sans-serif;
+font-size: small;
 }
+
+ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0px;
+    opacity: 0.75;
+    text-decoration-style: solid;
+}
+
+li {
+    float: left;
+}
+
+a { 
+    display: block;
+    padding: 8px;
+
+   }
 
 a:link{
 color:black;
@@ -16,12 +34,21 @@ a:hover {
     text-decoration-line: underline;
 }
 
+
 a:visited{
-    color: #609;
+    color:black;
 }
-
-
-.top{
-    display: inline-block;
-    font-size: 13px;
-    }
+#signin{
+    width: 70px;
+    border: 1px;
+    border-radius: 3px;
+    border-color: blue;
+    background-image: linear-gradient(rgb(10, 96, 245), rgb(39, 109, 230));
+    padding: 7px;
+    color: white;
+    font-weight: bold;
+}
+    
+#squares{
+    background-origin: ;
+}

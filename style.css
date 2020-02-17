@@ -45,8 +45,12 @@ a:visited{
     border-color: blue;
     background-image: linear-gradient(rgb(10, 96, 245), rgb(39, 109, 230));
     padding: 7px;
+    margin-top: 2px;
     color: white;
     font-weight: bold;
+    font-size: small;
+   
+   
 }
     
 #squares{
@@ -59,26 +63,36 @@ a:visited{
     background-image: url("./media/squares.svg");
     background-size: contain;
     opacity: 70%;
-    }
+        }
 
 #squares:hover{
     opacity: 100%;
     }
 
 img{
+    clear: right;
     display: block;
-    margin-left: 43%;
-    width: auto;
-    padding-top: 182px;  
+    margin: 0px auto; 
+    padding-top: 150px;  
+    padding-bottom: 25px;
 }
 
-
-input{
+input[name="google"]{
     display: block;
-    margin-left: 43%;
-    width: 500px;
-    height: 40px;
-    font-size: large;    
-
-  
+    width: 300px;
+    font-size: small;
+    margin: auto;  
+    
 }
+
+button[name="submit"]{
+    width: 150px;
+    height: 30px;
+    font-size: medium; 
+    opacity: 60%;
+    border: none;
+    border-radius: 3px;
+    
+       
+    }
+

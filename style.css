@@ -1,6 +1,6 @@
 
 body, html{
-height: 100%;
+min-height: 100%;
 margin: 0;
 display: block;
 font-family: ariel, sans-serif;
@@ -49,8 +49,6 @@ a:visited{
     color: white;
     font-weight: bold;
     font-size: small;
-   
-   
 }
     
 #squares{
@@ -77,22 +75,75 @@ img{
     padding-bottom: 25px;
 }
 
-input[name="google"]{
-    display: block;
-    width: 300px;
-    font-size: small;
-    margin: auto;  
-    
+
+input[name="q"]{
+    grid-area: input;
+    justify-items: stretch;
+    font-size: medium;
+    height: 40px;
+    border-radius: 20px;
+    border: medium;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+           
 }
 
-button[name="submit"]{
-    width: 150px;
-    height: 30px;
-    font-size: medium; 
+button[name="google"]{
+    grid-area: google;
+    min-width: 130px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 40px;
+    font-size: small; 
     opacity: 60%;
     border: none;
     border-radius: 3px;
-    
-       
+    margin-top: 20px;
+    margin-right: 4px;
+    justify-self: end;
+    background-color: rgba(214, 214, 214, 0.534);
     }
 
+button[name="lucky"]{
+    grid-area: lucky;
+    justify-self: center;
+    min-width: 130px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 40px;
+    font-size: small; 
+    opacity: 60%;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 4px;
+    justify-self: start;
+    background-color: rgba(214, 214, 214, 0.534);
+}
+
+
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "input input"
+    "google lucky";
+        
+}
+
+button[name="google"]:hover{
+    opacity: 80%;
+    
+    border: 1px solid rgba(194, 193, 193, 0.678);
+    cursor: pointer;
+}
+
+button[name="lucky"]:hover{
+    opacity: 80%;
+    
+    border: 1px solid rgba(194, 193, 193, 0.678);
+    cursor: pointer;
+}
